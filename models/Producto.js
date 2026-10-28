@@ -16,6 +16,14 @@ const Producto = sequelize.define('Producto', {
   stock: {
     type: DataTypes.INTEGER,
     defaultValue: 0
+  },
+  categoria_id: {
+    type: DataTypes.INTEGER,
+    allowNull: true
+  },
+  proveedor_id: {
+    type: DataTypes.INTEGER,
+    allowNull: true
   }
 }, {
   timestamps: true // Crea automáticamente createdAt y updatedAt
